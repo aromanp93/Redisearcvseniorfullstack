@@ -3,29 +3,29 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-white min-h-screen">
       <div className="max-w-[210mm] mx-auto bg-white">
         {/* PÁGINA 1 */}
-        <div className="p-12">
-          {/* ENCABEZADO */}
-          <header className="border-b-4 border-blue-600 pb-6 mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">ALBERTO ROMÁN PÉREZ</h1>
-            <p className="text-xl text-blue-600 font-semibold mb-4">
+        <div className="p-4 sm:p-8 md:p-12">
+          {/* ENCABEZADO FIJO */}
+          <header className="sticky top-0 z-50 bg-white border-b-4 border-blue-600 pb-4 sm:pb-6 mb-6 sm:mb-8 shadow-sm">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">ALBERTO ROMÁN PÉREZ</h1>
+            <p className="text-base sm:text-lg md:text-xl text-blue-600 font-semibold mb-3 sm:mb-4">
               Desarrollador Senior FullStack • React Native & Web
             </p>
             
-            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-700">
+            <div className="flex flex-wrap gap-x-3 sm:gap-x-6 gap-y-2 text-xs sm:text-sm text-gray-700">
               <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-blue-600" />
-                <span>Tecámac, Estado de México</span>
+                <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-blue-600 flex-shrink-0" />
+                <span className="break-words">Tecámac, Estado de México</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-blue-600" />
+                <Phone className="w-3 h-3 sm:w-4 sm:h-4 text-blue-600 flex-shrink-0" />
                 <span>55 4028 4794</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-blue-600" />
-                <span>aromanp.93@gmail.com</span>
+                <Mail className="w-3 h-3 sm:w-4 sm:h-4 text-blue-600 flex-shrink-0" />
+                <span className="break-all">aromanp.93@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-gray-600">Edad: 32 años</span>
@@ -189,10 +189,10 @@ export default function App() {
         </div>
 
         {/* PÁGINA 2 */}
-        <div className="p-12 print:page-break-before-always">
+        <div className="p-4 sm:p-8 md:p-12 print:page-break-before-always">
           {/* PRIXZ */}
           <div className="mb-6">
-            <div className="flex justify-between items-start mb-2">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1 sm:gap-0">
               <div>
                 <h3 className="text-lg font-bold text-gray-900">FullStack Developer</h3>
                 <p className="text-blue-600 font-semibold">PRIXZ • México</p>
@@ -403,15 +403,15 @@ export default function App() {
         </div>
 
         {/* PÁGINA 3 */}
-        <div className="p-12 print:page-break-before-always">
+        <div className="p-4 sm:p-8 md:p-12 print:page-break-before-always">
           {/* EDUCACIÓN */}
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-300 pb-2">
+          <section className="mb-6 sm:mb-8">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 border-b-2 border-gray-300 pb-2">
               EDUCACIÓN
             </h2>
             
             <div>
-              <div className="flex justify-between items-start mb-1">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1 gap-1 sm:gap-0">
                 <div>
                   <h3 className="font-bold text-gray-900">Licenciatura en Sistemas Informáticos</h3>
                   <p className="text-blue-600 font-semibold">Universidad Tecnológica de Tecámac</p>
@@ -422,8 +422,8 @@ export default function App() {
           </section>
 
           {/* PROYECTOS DESTACADOS */}
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4 border-b-2 border-gray-300 pb-2">
+          <section className="mb-6 sm:mb-8">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 border-b-2 border-gray-300 pb-2">
               PROYECTOS DESTACADOS
             </h2>
             
